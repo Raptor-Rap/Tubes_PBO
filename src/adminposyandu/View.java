@@ -246,6 +246,7 @@ public final class View extends javax.swing.JFrame {
         btnBatal = new javax.swing.JButton();
         txtCari = new javax.swing.JTextField();
         jLabel27 = new javax.swing.JLabel();
+        lihatBayi = new javax.swing.JButton();
         panelViewInputDataStaff = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
@@ -711,6 +712,14 @@ public final class View extends javax.swing.JFrame {
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("Cari");
         panelViewInputDataBayi.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, -1, -1));
+
+        lihatBayi.setText("Lihat Data");
+        lihatBayi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lihatBayiActionPerformed(evt);
+            }
+        });
+        panelViewInputDataBayi.add(lihatBayi, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 100, -1));
 
         panelKanan.add(panelViewInputDataBayi, "card2");
 
@@ -1830,6 +1839,11 @@ public final class View extends javax.swing.JFrame {
         txtKontak.setText(kontak);
 
     }//GEN-LAST:event_tableJadwalMouseClicked
+
+    private void lihatBayiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lihatBayiActionPerformed
+        Bayi bayi = new Bayi();
+        bayi.setVisible(true);
+    }//GEN-LAST:event_lihatBayiActionPerformed
     
     /**
      * @param args the command line arguments
@@ -1934,6 +1948,7 @@ public final class View extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JButton lihatBayi;
     private javax.swing.JPanel panelKanan;
     private javax.swing.JPanel panelKiri;
     private javax.swing.JPanel panelViewInputDataBayi;
